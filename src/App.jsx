@@ -164,17 +164,26 @@ App
 
 
 
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar1 from './component/Navbar1';
 import Sideheader from './component/Sideheader';
 import Header from './component/Header';
 import Table from './component/Table';
 import SwiggyApi from './component/SwiggyApi';
+import FormTab from './component/FormTab';
+import { FormContext, FormContextProvider } from './context/FormDataContext';
+import InfiniteScroll from './component/InfiniteScroll';
+import Accordian from './component/accordian/Accordian';
+import ImageSlider from './component/ImageSlider';
+import NestedComment from './component/NestedComment/NestedComment';
 
 const App = () => {
+ 
   return (
+   
+   <FormContextProvider>
     <div>
-      <Navbar1/>
+      {/* <Navbar1/>
     
       <div className='flex '>
         <div>
@@ -185,8 +194,17 @@ const App = () => {
             <Table/>
             <SwiggyApi/>
         </div>
-      </div>
+      </div> */}
+      <h1 className='p-40'>hfgydrtytdwr</h1>
+      {/* <FormTab/> */}
+      {/* <InfiniteScroll/> */}
+
+      {/* <Accordian/> */}
+      {/* <ImageSlider/> */}
+      <NestedComment/>
     </div>
+    </FormContextProvider>
+   
   );
 };
 
