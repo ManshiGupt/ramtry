@@ -176,6 +176,7 @@ import InfiniteScroll from './component/InfiniteScroll';
 import Accordian from './component/accordian/Accordian';
 import ImageSlider from './component/ImageSlider';
 import NestedComment from './component/NestedComment/NestedComment';
+import VSCodeSidebar from './component/SideBar';
 
 const App = () => {
  
@@ -202,6 +203,7 @@ const App = () => {
       {/* <Accordian/> */}
       {/* <ImageSlider/> */}
       <NestedComment/>
+      <VSCodeSidebar/>
     </div>
     </FormContextProvider>
    
